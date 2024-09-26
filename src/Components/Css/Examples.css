@@ -1,0 +1,17 @@
+/* Grid container for the examples */
+.examples-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  grid-gap: 20px; /* Space between images */
+  justify-items: center; /* Center images within their grid cells */
+  padding: 20px;
+}
+
+/* Styling for each image */
+.examples-grid-container img {
+  width: 100%;
+  height: auto;
+  max-width: 200px; /* Set a max width for the images */
+  border-radius: 10px; /* Optional: Rounded corners for the images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
