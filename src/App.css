@@ -19,6 +19,54 @@
   align-items: center;
 }
 
+.reasons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.reasons-container h1,
+.reasons-container img {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  flex: 1;
+}
+
+.reasons-container-reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.reasons-container-reviews h1,
+.reasons-container-reviews img {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+.reasons-container-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: gray; /* Add gray background */
+  padding: 20px; /* Optional: add some padding for spacing */
+}
+
+.reasons-container-socials img {
+  margin: 0 20px; /* Keep the margin for spacing */
+  max-width: 50px; /* Set a max-width to make the images smaller */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.custom-button {
+  padding: 20px 40px; /* Збільшені внутрішні відступи */
+  font-size: 24px; /* Збільшений розмір шрифту */
+  display: block; /* Переключаємо на блочний елемент */
+  margin: 0 auto; /* Центрування кнопки */
+}
+
 .App-link {
   color: #61dafb;
 }
