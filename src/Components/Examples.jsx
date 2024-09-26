@@ -1,17 +1,16 @@
 import React from "react";
-import Haircut1 from "../Images/Haircut1.jpg";
-import Haircut2 from "../Images/Haircut2.jpg";
-import Haircut3 from "../Images/Haircut3.jpg";
-import Haircut4 from "../Images/Haircut4.jpg";
-import Haircut5 from "../Images/Haircut5.jpg";
-import Haircut6 from "../Images/Haircut6.jpg";
-
+import Haircut1 from "../Images/Haircut1.png";
+import Haircut2 from "../Images/Haircut2.png";
+import Haircut3 from "../Images/Haircut3.png";
+import Haircut4 from "../Images/Haircut4.png";
+import Haircut5 from "../Images/Haircut5.png";
+import Haircut6 from "../Images/Haircut6.png";
 import "./Css/Examples.css";
 
 export function Examples() {
   return (
     <div>
-      <h1 className="App-header">Examples (Haircut photos)</h1>
+      <h1 className="App-header">Przykłady</h1>
       <div className="examples-grid-container">
         <img src={Haircut1} alt="Haircut1" />
         <img src={Haircut2} alt="Haircut2" />

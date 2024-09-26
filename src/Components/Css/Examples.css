@@ -10,8 +10,7 @@
 /* Styling for each image */
 .examples-grid-container img {
   width: 100%;
-  height: auto;
-  max-width: 200px; /* Set a max width for the images */
+  max-width: 500px; /* Set a max width for the images */
   border-radius: 10px; /* Optional: Rounded corners for the images */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
 }

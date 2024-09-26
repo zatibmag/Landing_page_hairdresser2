@@ -1,11 +1,11 @@
 import React from "react";
-import Dog from "../Images/Dog.jpg";
-import "../App.css";
+import Head_photo from "../Images/Head_photo.png";
+import "./Css/Images.css";
 
 export function Central_Image() {
   return (
-    <div className="App-header">
-      <img src={Dog} alt="Dog" />
+    <div>
+      <img className="centered-image" src={Head_photo} alt="Head_photo" />
     </div>
   );
 }

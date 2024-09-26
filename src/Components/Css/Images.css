@@ -1,0 +1,8 @@
+.centered-image {
+  border-radius: 50%; /* Makes the image circular */
+  width: 400px; /* Set width */
+  height: 400px; /* Set height */
+  display: block; /* Ensure it behaves like a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+  object-fit: cover; /* Ensures the image fits well inside the circle without stretching */
+}
