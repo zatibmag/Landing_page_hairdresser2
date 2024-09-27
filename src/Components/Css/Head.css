@@ -1,0 +1,36 @@
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-container {
+  position: relative;
+  width: 100%;
+  height: 750px; /* Adjust the height as needed */
+}
+
+.head-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.head-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Text color to stand out on the image */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Optional: a semi-transparent background for better readability */
+}

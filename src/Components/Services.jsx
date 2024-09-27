@@ -62,7 +62,7 @@ export function Services() {
 
   return (
     <div>
-      <h1 className="App-header">Nasze Usługi</h1>
+      <h1 className="titul-services">Nasze Usługi</h1>
       <div className="services-grid-container">
         {currentServices.map((service, index) => (
           <div className="service-block" key={index}>
@@ -81,7 +81,9 @@ export function Services() {
           </button>
         ))}
       </div>
-      <Button label={"Zapisz się"} onClick={""} />
+      <div class="button-container">
+        <Button label={"Zapisz się"} onClick={""} />
+      </div>
     </div>
   );
 }

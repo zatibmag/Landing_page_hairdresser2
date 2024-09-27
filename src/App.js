@@ -1,7 +1,6 @@
 import React from "react";
-import { Head } from "./Components/Head";
-import { Head_info } from "./Components/Head_Info";
-import { Central_Image } from "./Components/Central_Image";
+import { Head } from "./Components/Head/Head";
+
 import { Reasons } from "./Components/Reasons";
 import { Examples } from "./Components/Examples";
 import { Services } from "./Components/Services";
@@ -14,15 +13,13 @@ function App() {
   return (
     <>
       <Head />
-      <Head_info />
-      <Central_Image />
       <Reasons />
       <Examples />
       <Services />
-      <Reviews />
+      {/* <Reviews />
       <Dyploms />
       <Ratings />
-      <Socials />
+      <Socials /> */}
     </>
   );
 }

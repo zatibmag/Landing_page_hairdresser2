@@ -9,8 +9,8 @@ import "./Css/Examples.css";
 
 export function Examples() {
   return (
-    <div>
-      <h1 className="App-header">Przykłady</h1>
+    <div className="examples-bg">
+      <h1 className="titul">Przykłady</h1>
       <div className="examples-grid-container">
         <img src={Haircut1} alt="Haircut1" />
         <img src={Haircut2} alt="Haircut2" />

@@ -1,9 +1,12 @@
 /* Container for the grid layout */
 .services-grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Create a 3-column grid for larger screens */
   grid-gap: 20px; /* Gap between each service block */
-  padding: 20px; /* Padding around the grid */
+  padding: 4%; /* Padding around the grid */
   margin-top: 20px; /* Space above the grid */
 }
 
@@ -37,7 +40,6 @@
 .pagination-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
 
 /* Styling for the pagination buttons */
@@ -61,4 +63,95 @@
 .pagination-container button:hover {
   background-color: #555;
   color: white;
+}
+
+.titul-services {
+  top: 30px;
+  position: relative; /* Ensure the top property works */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem; /* Default font size for larger screens */
+  text-align: center; /* Ensure title is centered */
+}
+
+/* Container for centering the button */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styling the button to fit the black-themed website */
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: rgb(15, 15, 15); /* Dark grey/black button color */
+  color: #fff; /* White text for contrast */
+  border: 1px solid #555; /* Slightly lighter border for depth */
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #444; /* Slightly lighter on hover */
+  border-color: #777;
+  transform: translateY(-3px); /* Small upward movement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  button {
+    width: 100%; /* Full-width button on tablet-sized screens */
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    font-size: 14px;
+    padding: 10px 20px; /* Adjust padding for smaller devices */
+  }
+}
+
+/* Responsive adjustments for tablets (768px and smaller) */
+@media (max-width: 768px) {
+  .titul-reasons {
+    font-size: 1.8rem; /* Adjust font size for tablets */
+    top: 40px; /* Adjust top positioning */
+  }
+}
+
+/* Responsive adjustments for phones (480px and smaller) */
+@media (max-width: 480px) {
+  .titul-reasons {
+    font-size: 1.5rem; /* Smaller font size for phones */
+    top: 10px; /* Move the title even lower */
+    padding: 0 10px; /* Add padding to prevent text overflow on small screens */
+  }
+}
+
+/* Responsive design for smaller screens (phones, tablets) */
+@media (max-width: 768px) {
+  .services-grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for tablets */
+    padding: 10%; /* Adjust padding for smaller screens */
+  }
+
+  .service-block {
+    padding: 15px; /* Adjust padding inside the boxes */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid-container {
+    grid-template-columns: 1fr; /* Change to 1 column for small screens */
+    padding: 5%; /* Reduce padding on mobile */
+  }
+
+  .service-block {
+    padding: 10px; /* Reduce padding inside the boxes */
+  }
 }

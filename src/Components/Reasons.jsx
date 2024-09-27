@@ -4,7 +4,7 @@ import "./Css/Reasons.css";
 export function Reasons() {
   return (
     <div>
-      <h1 className="App-header">Dlaczego warto pracować ze mną?</h1>
+      <h1 className="titul-reasons">Dlaczego warto pracować ze mną?</h1>
       <div className="reasons-scroll-container">
         <div className="reason-block">
           <h1>Pasja do pracy:</h1>

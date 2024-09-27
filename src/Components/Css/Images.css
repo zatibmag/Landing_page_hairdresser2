@@ -1,8 +1,24 @@
 .centered-image {
   border-radius: 50%; /* Makes the image circular */
-  width: 400px; /* Set width */
-  height: 400px; /* Set height */
+  width: 400px; /* Default width for desktop */
+  height: 400px; /* Default height for desktop */
   display: block; /* Ensure it behaves like a block element */
   margin: 0 auto; /* Centers the image horizontally */
   object-fit: cover; /* Ensures the image fits well inside the circle without stretching */
+}
+
+/* For tablets (768px and smaller) */
+@media (max-width: 768px) {
+  .centered-image {
+    width: 300px; /* Adjust width for smaller screens */
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}
+
+/* For mobile devices (480px and smaller) */
+@media (max-width: 480px) {
+  .centered-image {
+    width: 200px; /* Further adjust width for mobile */
+    height: 200px; /* Further adjust height for mobile */
+  }
 }

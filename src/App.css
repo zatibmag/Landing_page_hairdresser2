@@ -13,12 +13,6 @@
   }
 }
 
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .reasons-container {
   display: flex;
   justify-content: center;
