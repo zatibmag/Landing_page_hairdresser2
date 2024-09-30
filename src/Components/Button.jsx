@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 
-export function Button({ label, onClick }) {
+export function Button({ label }) {
   return (
     <button
       className="custom-button"

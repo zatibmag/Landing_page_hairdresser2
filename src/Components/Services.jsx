@@ -82,7 +82,7 @@ export function Services() {
         ))}
       </div>
       <div class="button-container">
-        <Button label={"Zapisz się"} onClick={""} />
+        <Button label={"Zapisz się"} />
       </div>
     </div>
   );

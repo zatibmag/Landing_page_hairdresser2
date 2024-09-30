@@ -1,0 +1,97 @@
+/* Reviews container styling */
+.reasons-container-reviews {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 5% 5% 5% 0; /* Adjust padding */
+  margin-left: 0; /* Remove left margin */
+  justify-content: flex-start; /* Align items to start */
+  margin-left: 20px; /* Space on the left */
+  margin-right: 20px; /* Space on the right */
+}
+
+.reasons-container-reviews img {
+  min-width: 300px; /* Adjust to control image size */
+  max-width: 90%; /* Ensure it fits within the container */
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  object-fit: cover; /* Ensures the image fits within its container */
+}
+
+/* Customize the scroll bar */
+.reasons-container-reviews::-webkit-scrollbar {
+  height: 8px;
+}
+
+.reasons-container-reviews::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.reasons-container-reviews::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.small-image {
+  min-width: 200px; /* Smaller minimum width */
+  max-width: 70%; /* Smaller max width */
+}
+
+.small-image img {
+  min-width: 200px; /* Smaller images */
+  max-width: 70%; /* Ensure the image size is scaled down */
+}
+
+/* Styling for the header */
+.titul-review {
+  top: 75px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem; /* Default font size */
+  text-align: center;
+  margin-bottom: 20px; /* Space below the header */
+}
+
+/* Responsive adjustments for tablets (768px and smaller) */
+@media (max-width: 768px) {
+  .titul-review {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .reasons-container-reviews {
+    padding: 3%; /* Adjust padding */
+    gap: 15px; /* Reduce gap between images */
+    margin-left: 0; /* Adjust margin */
+    margin-right: 10px; /* Adjust margin */
+  }
+
+  .reasons-container-reviews img {
+    min-width: 250px; /* Make images smaller for tablets */
+  }
+}
+
+/* Responsive adjustments for phones (480px and smaller) */
+@media (max-width: 480px) {
+  .titul-review {
+    font-size: 1.5rem; /* Smaller font for mobile */
+    padding: 0 10px; /* Ensure text doesn't overflow */
+  }
+
+  .reasons-container-reviews {
+    padding: 2%; /* Reduce padding further on mobile */
+    gap: 10px; /* Smaller gap between images */
+    margin-left: 5px; /* Adjust margin */
+    margin-right: 5px; /* Adjust margin */
+    flex-direction: column; /* Change to column layout for phones */
+    align-items: center; /* Center the images in the column */
+    overflow-x: visible; /* Disable horizontal scrolling in column layout */
+  }
+
+  .reasons-container-reviews img {
+    min-width: 100%; /* Make images take up full width of the container */
+    max-width: 300px; /* Limit the max width of images */
+  }
+}

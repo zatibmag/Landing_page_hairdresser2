@@ -16,9 +16,9 @@ function App() {
       <Reasons />
       <Examples />
       <Services />
-      {/* <Reviews />
+      <Reviews />
       <Dyploms />
-      <Ratings />
+      {/* <Ratings />
       <Socials /> */}
     </>
   );
