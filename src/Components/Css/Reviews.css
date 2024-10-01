@@ -2,7 +2,6 @@
 .reasons-container-reviews {
   display: flex;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
   padding: 5% 5% 5% 0; /* Adjust padding */
   margin-left: 0; /* Remove left margin */
   justify-content: flex-start; /* Align items to start */
@@ -11,8 +10,8 @@
 }
 
 .reasons-container-reviews img {
-  min-width: 300px; /* Adjust to control image size */
-  max-width: 90%; /* Ensure it fits within the container */
+  min-width: 200px; /* Smaller images */
+  max-width: 50%; /* Ensure the image size is scaled down */
   flex-shrink: 0;
   scroll-snap-align: start;
   border-radius: 10px;
@@ -32,16 +31,6 @@
 
 .reasons-container-reviews::-webkit-scrollbar-thumb:hover {
   background-color: #555;
-}
-
-.small-image {
-  min-width: 200px; /* Smaller minimum width */
-  max-width: 70%; /* Smaller max width */
-}
-
-.small-image img {
-  min-width: 200px; /* Smaller images */
-  max-width: 70%; /* Ensure the image size is scaled down */
 }
 
 /* Styling for the header */

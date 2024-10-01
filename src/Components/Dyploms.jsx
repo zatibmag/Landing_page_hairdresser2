@@ -12,14 +12,14 @@ export function Dyploms() {
   return (
     <div>
       <h1 className="titul-review">Certyfikaty</h1>
-      <div className="reasons-container-reviews small-image">
+      <div className="reasons-container-reviews">
         <img src={Certyficate1} alt="Certyficate1" />
         <img src={Certyficate2} alt="Certyficate2" />
         <img src={Certyficate3} alt="Certyficate3" />
-        <img src={Certyficate7} alt="Certyficate7" />
         <img src={Certyficate4} alt="Certyficate4" />
         <img src={Certyficate5} alt="Certyficate5" />
         <img src={Certyficate6} alt="Certyficate6" />
+        <img src={Certyficate7} alt="Certyficate7" />
       </div>
     </div>
   );
