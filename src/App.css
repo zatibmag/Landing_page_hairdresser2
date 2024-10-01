@@ -39,20 +39,6 @@
   justify-content: center;
   margin: 0 20px;
 }
-.reasons-container-socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  background-color: gray; /* Add gray background */
-  padding: 20px; /* Optional: add some padding for spacing */
-}
-
-.reasons-container-socials img {
-  margin: 0 20px; /* Keep the margin for spacing */
-  max-width: 50px; /* Set a max-width to make the images smaller */
-  height: auto; /* Maintain the aspect ratio */
-}
 
 .custom-button {
   padding: 20px 40px; /* Збільшені внутрішні відступи */

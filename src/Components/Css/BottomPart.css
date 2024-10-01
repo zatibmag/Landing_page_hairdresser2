@@ -1,0 +1,14 @@
+.reasons-container-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: rgb(15, 15, 15); /* Add gray background */
+  padding: 20px; /* Optional: add some padding for spacing */
+}
+
+.reasons-container-socials img {
+  margin: 0 20px; /* Keep the margin for spacing */
+  max-width: 50px; /* Set a max-width to make the images smaller */
+  height: auto; /* Maintain the aspect ratio */
+}

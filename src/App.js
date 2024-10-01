@@ -6,8 +6,7 @@ import { Examples } from "./Components/Examples";
 import { Services } from "./Components/Services";
 import { Reviews } from "./Components/Reviews";
 import { Dyploms } from "./Components/Dyploms";
-import { Ratings } from "./Components/Ratings";
-import { Socials } from "./Components/Socials";
+import { BottomPart } from "./Components/BottomPart";
 
 function App() {
   return (
@@ -18,8 +17,7 @@ function App() {
       <Services />
       <Reviews />
       <Dyploms />
-      {/* <Ratings />
-      <Socials /> */}
+      <BottomPart />
     </>
   );
 }
