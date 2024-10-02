@@ -41,10 +41,10 @@
 }
 
 .custom-button {
-  padding: 20px 40px; /* Збільшені внутрішні відступи */
-  font-size: 24px; /* Збільшений розмір шрифту */
-  display: block; /* Переключаємо на блочний елемент */
-  margin: 0 auto; /* Центрування кнопки */
+  padding: 20px 40px;
+  font-size: 24px;
+  display: block;
+  margin: 0 auto;
 }
 
 .App-link {

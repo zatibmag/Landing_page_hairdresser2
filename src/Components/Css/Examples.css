@@ -1,47 +1,43 @@
-/* Grid container for the examples */
 .examples-grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
-  grid-gap: 20px; /* Space between images */
-  justify-items: center; /* Center images within their grid cells */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
   padding: 100px;
 }
 
-/* Styling for each image */
 .examples-grid-container img {
   width: 100%;
-  max-width: 500px; /* Set a max width for the images */
-  border-radius: 10px; /* Optional: Rounded corners for the images */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .examples-bg {
   background: rgb(15, 15, 15);
 }
 
-/* Title styling */
 .titul {
   top: 60px;
-  position: relative; /* Ensure the top property works */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
 }
 
-/* Responsive design for phones (480px and smaller) */
 @media (max-width: 480px) {
   .examples-grid-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for phones */
-    padding: 20px; /* Reduce padding for smaller screens */
-    grid-gap: 10px; /* Reduce gap between images on small screens */
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
   }
 
   .examples-grid-container img {
-    max-width: 100%; /* Ensure images scale down fully for small screens */
+    max-width: 100%;
   }
 
   .titul {
-    top: 30px; /* Adjust title position */
+    top: 30px;
   }
 }

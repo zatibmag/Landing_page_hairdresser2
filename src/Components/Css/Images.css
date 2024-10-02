@@ -1,24 +1,22 @@
 .centered-image {
-  border-radius: 50%; /* Makes the image circular */
-  width: 400px; /* Default width for desktop */
-  height: 400px; /* Default height for desktop */
-  display: block; /* Ensure it behaves like a block element */
-  margin: 0 auto; /* Centers the image horizontally */
-  object-fit: cover; /* Ensures the image fits well inside the circle without stretching */
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
-/* For tablets (768px and smaller) */
 @media (max-width: 768px) {
   .centered-image {
-    width: 300px; /* Adjust width for smaller screens */
-    height: 300px; /* Adjust height for smaller screens */
+    width: 300px;
+    height: 300px;
   }
 }
 
-/* For mobile devices (480px and smaller) */
 @media (max-width: 480px) {
   .centered-image {
-    width: 200px; /* Further adjust width for mobile */
-    height: 200px; /* Further adjust height for mobile */
+    width: 200px;
+    height: 200px;
   }
 }

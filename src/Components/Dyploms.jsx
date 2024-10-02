@@ -6,12 +6,28 @@ import Certyficate4 from "../Images/certificate4_page-0001.jpg";
 import Certyficate5 from "../Images/certificate5_page-0001.jpg";
 import Certyficate6 from "../Images/certificate6_page-0001.jpg";
 import Certyficate7 from "../Images/certificate7_page-0001.jpg";
+import { useLanguage } from "../Context/LanguageContext";
 import "./Css/Reviews.css";
 
 export function Dyploms() {
+  const { selectedLanguage } = useLanguage();
+
+  const getTitle = () => {
+    switch (selectedLanguage) {
+      case "Polish":
+        return "Certyfikaty";
+      case "English":
+        return "Certificates";
+      case "Ukrainian":
+        return "Сертифікати";
+      default:
+        return "Certyfikaty";
+    }
+  };
+
   return (
     <div>
-      <h1 className="titul-review">Certyfikaty</h1>
+      <h1 className="titul-review">{getTitle()}</h1>
       <div className="reasons-container-reviews">
         <img src={Certyficate1} alt="Certyficate1" />
         <img src={Certyficate2} alt="Certyficate2" />
