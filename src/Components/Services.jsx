@@ -1,47 +1,292 @@
 import React, { useState } from "react";
-import "./Css/Services.css";
 import { Button } from "./Button";
+import { useLanguage } from "../Context/LanguageContext";
+import "./Css/Services.css";
 
 export function Services() {
+  const { selectedLanguage } = useLanguage();
+
   const services = [
-    { name: "Strzyżenie męskie maszynką", price: "45 zł" },
-    { name: "Strzyżenie męskie maszynką + nożyczki", price: "55 zł" },
-    { name: "Strzyżenie męskie tylko nożyczki", price: "70 zł" },
-    { name: "Strzyżenie brody", price: "35 zł" },
-    { name: "Strzyżenie grzywki", price: "35 zł" },
-    { name: "Strzyżenie końcówek na prosto", price: "70 zł" },
-    { name: "Strzyżenie damskie krótkie włosy", price: "100 zł" },
-    { name: "Strzyżenie damskie średnie włosy", price: "110 zł" },
-    { name: "Strzyżenie damskie długie włosy", price: "120 zł" },
-    { name: "Peeling skóry głowy + ampułka", price: "75 zł" },
-    { name: "Mycie + modelowanie włosów", price: "100 zł" },
-    { name: "Prostowanie włosów", price: "100 zł" },
-    { name: "Farbowanie odrostu Matrix", price: "200 zł" },
-    { name: "Farbowanie Matrix krótkich włosów", price: "220 zł" },
-    { name: "Farbowanie Matrix średnich włosów", price: "260 zł" },
-    { name: "Farbowanie Matrix długich włosów", price: "300 zł" },
-    { name: "Tonowanie Matrix włosów", price: "200 zł" },
-    { name: "Farbowanie Matrix włosów + refleksy", price: "350 zł" },
-    { name: "Dekoloryzacja odrostu + tonowanie", price: "350 zł" },
-    { name: "Farbowanie odrostu Artego", price: "180 zł" },
-    { name: "Farbowanie krótkich włosów Artego", price: "190 zł" },
-    { name: "Farbowanie średnich włosów Artego", price: "230 zł" },
-    { name: "Farbowanie długich włosów Artego", price: "260 zł" },
-    { name: "Tonowanie Artego włosów", price: "150 zł" },
-    { name: "Balejaż", price: "280 zł" },
-    { name: "Microbalejaż", price: "340 zł" },
-    { name: "Air touch", price: "490 zł" },
-    { name: "Shatush", price: "460 zł" },
-    { name: "Baby blond", price: "300 zł" },
-    { name: "Refleksy", price: "220 zł" },
-    { name: "Maskowanie siwych włosów", price: "170 zł" },
-    { name: "Kolorowa kąpiel dla włosów", price: "100 zł" },
     {
-      name: "Zabieg pielęgnacyjny (np. maska, ampułka, botoks)",
+      name: {
+        Polish: "Strzyżenie męskie maszynką",
+        English: "Men's Haircut with Machine",
+        Ukrainian: "Чоловіче стрижка машинкою",
+      },
+      price: "45 zł",
+    },
+    {
+      name: {
+        Polish: "Strzyżenie męskie maszynką + nożyczki",
+        English: "Men's Haircut with Machine + Scissors",
+        Ukrainian: "Чоловіче стрижка машинкою + ножиці",
+      },
+      price: "55 zł",
+    },
+    {
+      name: {
+        Polish: "Strzyżenie męskie tylko nożyczki",
+        English: "Men's Haircut with Scissors Only",
+        Ukrainian: "Чоловіче стрижка тільки ножицями",
+      },
+      price: "70 zł",
+    },
+    {
+      name: {
+        Polish: "Strzyżenie brody",
+        English: "Beard Trim",
+        Ukrainian: "Стрижка бороди",
+      },
+      price: "35 zł",
+    },
+    {
+      name: {
+        Polish: "Strzyżenie grzywki",
+        English: "Fringe Trim",
+        Ukrainian: "Стрижка чубчика",
+      },
+      price: "35 zł",
+    },
+    {
+      name: {
+        Polish: "Strzyżenie końcówek na prosto",
+        English: "Straight End Trim",
+        Ukrainian: "Косий зріз кінчиків",
+      },
+      price: "70 zł",
+    },
+    {
+      name: {
+        Polish: "Strzyżenie damskie krótkie włosy",
+        English: "Women's Short Haircut",
+        Ukrainian: "Жіноча коротка стрижка",
+      },
+      price: "100 zł",
+    },
+    {
+      name: {
+        Polish: "Strzyżenie damskie średnie włosy",
+        English: "Women's Medium Haircut",
+        Ukrainian: "Жіноча середня стрижка",
+      },
+      price: "110 zł",
+    },
+    {
+      name: {
+        Polish: "Strzyżenie damskie długie włosy",
+        English: "Women's Long Haircut",
+        Ukrainian: "Жіноча довга стрижka",
+      },
       price: "120 zł",
     },
-    { name: "Zabieg głębokiej rekonstrukcji włosów", price: "170 zł" },
-    { name: "Konsultacja fryzjerska", price: "55 zł" },
+    {
+      name: {
+        Polish: "Peeling skóry głowy + ampułka",
+        English: "Scalp Peeling + Ampoule",
+        Ukrainian: "Пілінг шкіри голови + ампула",
+      },
+      price: "75 zł",
+    },
+    {
+      name: {
+        Polish: "Mycie + modelowanie włosów",
+        English: "Washing + Hair Styling",
+        Ukrainian: "Миття + укладання волосся",
+      },
+      price: "100 zł",
+    },
+    {
+      name: {
+        Polish: "Prostowanie włosów",
+        English: "Hair Straightening",
+        Ukrainian: "Випрямлення волосся",
+      },
+      price: "100 zł",
+    },
+    {
+      name: {
+        Polish: "Farbowanie odrostu Matrix",
+        English: "Matrix Root Coloring",
+        Ukrainian: "Фарбування коріння Matrix",
+      },
+      price: "200 zł",
+    },
+    {
+      name: {
+        Polish: "Farbowanie Matrix krótkich włosów",
+        English: "Matrix Short Hair Coloring",
+        Ukrainian: "Фарбування короткого волосся Matrix",
+      },
+      price: "220 zł",
+    },
+    {
+      name: {
+        Polish: "Farbowanie Matrix średnich włosów",
+        English: "Matrix Medium Hair Coloring",
+        Ukrainian: "Фарбування середнього волосся Matrix",
+      },
+      price: "260 zł",
+    },
+    {
+      name: {
+        Polish: "Farbowanie Matrix długich włosów",
+        English: "Matrix Long Hair Coloring",
+        Ukrainian: "Фарбування довгого волосся Matrix",
+      },
+      price: "300 zł",
+    },
+    {
+      name: {
+        Polish: "Tonowanie Matrix włosów",
+        English: "Matrix Hair Toning",
+        Ukrainian: "Тонування волосся Matrix",
+      },
+      price: "200 zł",
+    },
+    {
+      name: {
+        Polish: "Farbowanie Matrix włosów + refleksy",
+        English: "Matrix Hair Coloring + Highlights",
+        Ukrainian: "Фарбування волосся Matrix + мелірування",
+      },
+      price: "350 zł",
+    },
+    {
+      name: {
+        Polish: "Dekoloryzacja odrostu + tonowanie",
+        English: "Root Decolorization + Toning",
+        Ukrainian: "Деколоризація коріння + тонування",
+      },
+      price: "350 zł",
+    },
+    {
+      name: {
+        Polish: "Farbowanie odrostu Artego",
+        English: "Artego Root Coloring",
+        Ukrainian: "Фарбування коріння Artego",
+      },
+      price: "180 zł",
+    },
+    {
+      name: {
+        Polish: "Farbowanie krótkich włosów Artego",
+        English: "Artego Short Hair Coloring",
+        Ukrainian: "Фарбування короткого волосся Artego",
+      },
+      price: "190 zł",
+    },
+    {
+      name: {
+        Polish: "Farbowanie średnich włosów Artego",
+        English: "Artego Medium Hair Coloring",
+        Ukrainian: "Фарбування середнього волосся Artego",
+      },
+      price: "230 zł",
+    },
+    {
+      name: {
+        Polish: "Farbowanie długich włosów Artego",
+        English: "Artego Long Hair Coloring",
+        Ukrainian: "Фарбування довгого волосся Artego",
+      },
+      price: "260 zł",
+    },
+    {
+      name: {
+        Polish: "Tonowanie Artego włosów",
+        English: "Artego Hair Toning",
+        Ukrainian: "Тонування волосся Artego",
+      },
+      price: "150 zł",
+    },
+    {
+      name: {
+        Polish: "Balejaż",
+        English: "Balayage",
+        Ukrainian: "Балаяж",
+      },
+      price: "280 zł",
+    },
+    {
+      name: {
+        Polish: "Microbalejaż",
+        English: "Micro Balayage",
+        Ukrainian: "Мікро балаяж",
+      },
+      price: "340 zł",
+    },
+    {
+      name: {
+        Polish: "Air touch",
+        English: "Air Touch",
+        Ukrainian: "Аеротач",
+      },
+      price: "490 zł",
+    },
+    {
+      name: {
+        Polish: "Shatush",
+        English: "Shatush",
+        Ukrainian: "Шатуш",
+      },
+      price: "460 zł",
+    },
+    {
+      name: {
+        Polish: "Baby blond",
+        English: "Baby Blonde",
+        Ukrainian: "Бебі блондин",
+      },
+      price: "300 zł",
+    },
+    {
+      name: {
+        Polish: "Refleksy",
+        English: "Highlights",
+        Ukrainian: "Мелірування",
+      },
+      price: "220 zł",
+    },
+    {
+      name: {
+        Polish: "Maskowanie siwych włosów",
+        English: "Gray Hair Camouflage",
+        Ukrainian: "Камуфляж сивого волосся",
+      },
+      price: "170 zł",
+    },
+    {
+      name: {
+        Polish: "Kolorowa kąpiel dla włosów",
+        English: "Color Bath for Hair",
+        Ukrainian: "Кольорова ванна для волосся",
+      },
+      price: "100 zł",
+    },
+    {
+      name: {
+        Polish: "Zabieg pielęgnacyjny (np. maska, ampułka, botoks)",
+        English: "Nourishing Treatment (e.g. mask, ampoule, botox)",
+        Ukrainian: "Доглядна процедура (наприклад, маска, ампула, ботокс)",
+      },
+      price: "120 zł",
+    },
+    {
+      name: {
+        Polish: "Zabieg głębokiej rekonstrukcji włosów",
+        English: "Deep Hair Reconstruction Treatment",
+        Ukrainian: "Глибоке відновлення волосся",
+      },
+      price: "170 zł",
+    },
+    {
+      name: {
+        Polish: "Konsultacja fryzjerska",
+        English: "Hairdressing Consultation",
+        Ukrainian: "Консультація перукаря",
+      },
+      price: "55 zł",
+    },
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -60,13 +305,43 @@ export function Services() {
     setCurrentPage(pageNumber);
   };
 
+  const getServiceName = (service) => {
+    switch (selectedLanguage) {
+      case "Polish":
+        return service.name.Polish;
+      case "English":
+        return service.name.English;
+      case "Ukrainian":
+        return service.name.Ukrainian;
+      default:
+        return service.name.Polish;
+    }
+  };
+
+  const getButtonLabel = () => {
+    switch (selectedLanguage) {
+      case "Polish":
+        return "Zapisz się";
+      case "English":
+        return "Sign Up";
+      case "Ukrainian":
+        return "Записатися";
+      default:
+        return "Zapisz się";
+    }
+  };
+
   return (
     <div>
-      <h1 className="titul-services">Nasze Usługi</h1>
+      <h1 className="titul-services">
+        {selectedLanguage === "Polish" && "Nasze Usługi"}
+        {selectedLanguage === "English" && "Our Services"}
+        {selectedLanguage === "Ukrainian" && "Наші послуги"}
+      </h1>
       <div className="services-grid-container">
         {currentServices.map((service, index) => (
           <div className="service-block" key={index}>
-            <h2>{service.name}</h2>
+            <h2>{getServiceName(service)}</h2>
             <p>{service.price}</p>
           </div>
         ))}
@@ -83,7 +358,7 @@ export function Services() {
         ))}
       </div>
       <div className="button-container">
-        <Button label={"Zapisz się"} />
+        <Button label={getButtonLabel()} />
       </div>
     </div>
   );

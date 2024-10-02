@@ -1,5 +1,6 @@
 import React from "react";
 import { useLanguage } from "../Context/LanguageContext";
+import "./Css/LanguageSelector.css";
 
 export function LanguageSelector() {
   const { selectedLanguage, setSelectedLanguage } = useLanguage();
@@ -9,7 +10,7 @@ export function LanguageSelector() {
   };
 
   return (
-    <div>
+    <div className="language-selector">
       <select
         id="language"
         value={selectedLanguage}
