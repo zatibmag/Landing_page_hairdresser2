@@ -9,7 +9,7 @@
 
 .reasons-container-reviews img {
   min-width: 200px;
-  max-width: 100%; /* Set to 100% to make the image responsive */
+  max-width: 50%; /* Set to 100% to make the image responsive */
   flex-shrink: 0;
   scroll-snap-align: start;
   border-radius: 10px;

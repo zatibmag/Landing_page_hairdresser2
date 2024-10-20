@@ -48,7 +48,6 @@ export function Reviews() {
         <img src={Review3} alt="Review3" />
         <img src={Review4} alt="Review4" />
         <img src={Review5} alt="Review5" />
-        <Button label={getButtonLabel()} />
       </div>
     </div>
   );

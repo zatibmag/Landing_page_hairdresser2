@@ -7,7 +7,8 @@ import Certyficate5 from "../Images/certificate5_page-0001.jpg";
 import Certyficate6 from "../Images/certificate6_page-0001.jpg";
 import Certyficate7 from "../Images/certificate7_page-0001.jpg";
 import { useLanguage } from "../Context/LanguageContext";
-import "./Css/Reviews.css";
+import { Button } from "./Button";
+import "./Css/Dyploms.css";
 
 export function Dyploms() {
   const { selectedLanguage } = useLanguage();
@@ -36,6 +37,9 @@ export function Dyploms() {
         <img src={Certyficate5} alt="Certyficate5" />
         <img src={Certyficate6} alt="Certyficate6" />
         <img src={Certyficate7} alt="Certyficate7" />
+      </div>
+      <div className="button-container">
+        <Button />
       </div>
     </div>
   );

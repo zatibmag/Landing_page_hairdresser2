@@ -11,7 +11,7 @@ export function Services() {
       name: {
         Polish: "Strzyżenie męskie maszynką",
         English: "Men's Haircut with Machine",
-        Ukrainian: "Чоловіче стрижка машинкою",
+        Ukrainian: "Чоловіча стрижка машинкою",
       },
       price: "45 zł",
     },
@@ -19,7 +19,7 @@ export function Services() {
       name: {
         Polish: "Strzyżenie męskie maszynką + nożyczki",
         English: "Men's Haircut with Machine + Scissors",
-        Ukrainian: "Чоловіче стрижка машинкою + ножиці",
+        Ukrainian: "Чоловіча стрижка машинкою + ножиці",
       },
       price: "55 zł",
     },
@@ -27,7 +27,7 @@ export function Services() {
       name: {
         Polish: "Strzyżenie męskie tylko nożyczki",
         English: "Men's Haircut with Scissors Only",
-        Ukrainian: "Чоловіче стрижка тільки ножицями",
+        Ukrainian: "Чоловіча стрижка тільки ножицями",
       },
       price: "70 zł",
     },
@@ -51,7 +51,7 @@ export function Services() {
       name: {
         Polish: "Strzyżenie końcówek na prosto",
         English: "Straight End Trim",
-        Ukrainian: "Косий зріз кінчиків",
+        Ukrainian: "Стрижка кінчіків волосся",
       },
       price: "70 zł",
     },
@@ -75,7 +75,7 @@ export function Services() {
       name: {
         Polish: "Strzyżenie damskie długie włosy",
         English: "Women's Long Haircut",
-        Ukrainian: "Жіноча довга стрижka",
+        Ukrainian: "Жіноча довга стрижкa",
       },
       price: "120 zł",
     },
@@ -83,7 +83,7 @@ export function Services() {
       name: {
         Polish: "Peeling skóry głowy + ampułka",
         English: "Scalp Peeling + Ampoule",
-        Ukrainian: "Пілінг шкіри голови + ампула",
+        Ukrainian: "Пілінг шкіри голови + ампулка",
       },
       price: "75 zł",
     },
@@ -99,7 +99,7 @@ export function Services() {
       name: {
         Polish: "Prostowanie włosów",
         English: "Hair Straightening",
-        Ukrainian: "Випрямлення волосся",
+        Ukrainian: "Вирівнювання волосся",
       },
       price: "100 zł",
     },
@@ -209,6 +209,14 @@ export function Services() {
     },
     {
       name: {
+        Polish: "powierzchniowy balejaż",
+        English: "surface balayage",
+        Ukrainian: "Поверхневий Балаяж",
+      },
+      price: "220 zł",
+    },
+    {
+      name: {
         Polish: "Microbalejaż",
         English: "Micro Balayage",
         Ukrainian: "Мікро балаяж",
@@ -217,9 +225,9 @@ export function Services() {
     },
     {
       name: {
-        Polish: "Air touch",
+        Polish: "Air Touch",
         English: "Air Touch",
-        Ukrainian: "Аеротач",
+        Ukrainian: "Air Touch",
       },
       price: "490 zł",
     },
@@ -227,15 +235,15 @@ export function Services() {
       name: {
         Polish: "Shatush",
         English: "Shatush",
-        Ukrainian: "Шатуш",
+        Ukrainian: "Shatush",
       },
       price: "460 zł",
     },
     {
       name: {
-        Polish: "Baby blond",
+        Polish: "Baby Blonde",
         English: "Baby Blonde",
-        Ukrainian: "Бебі блондин",
+        Ukrainian: "Baby Blonde",
       },
       price: "300 zł",
     },
@@ -251,7 +259,7 @@ export function Services() {
       name: {
         Polish: "Maskowanie siwych włosów",
         English: "Gray Hair Camouflage",
-        Ukrainian: "Камуфляж сивого волосся",
+        Ukrainian: "Маскування сивого волосся",
       },
       price: "170 zł",
     },
@@ -259,7 +267,7 @@ export function Services() {
       name: {
         Polish: "Kolorowa kąpiel dla włosów",
         English: "Color Bath for Hair",
-        Ukrainian: "Кольорова ванна для волосся",
+        Ukrainian: "Кольорова баня для волосся",
       },
       price: "100 zł",
     },
@@ -267,7 +275,7 @@ export function Services() {
       name: {
         Polish: "Zabieg pielęgnacyjny (np. maska, ampułka, botoks)",
         English: "Nourishing Treatment (e.g. mask, ampoule, botox)",
-        Ukrainian: "Доглядна процедура (наприклад, маска, ампула, ботокс)",
+        Ukrainian: "Доглядова процедура (наприклад, маска, ампулка, ботокс)",
       },
       price: "120 zł",
     },
@@ -318,19 +326,6 @@ export function Services() {
     }
   };
 
-  const getButtonLabel = () => {
-    switch (selectedLanguage) {
-      case "Polish":
-        return "Zapisz się";
-      case "English":
-        return "Sign Up";
-      case "Ukrainian":
-        return "Записатися";
-      default:
-        return "Zapisz się";
-    }
-  };
-
   return (
     <div>
       <h1 className="titul-services">
@@ -358,7 +353,7 @@ export function Services() {
         ))}
       </div>
       <div className="button-container">
-        <Button label={getButtonLabel()} />
+        <Button />
       </div>
     </div>
   );
