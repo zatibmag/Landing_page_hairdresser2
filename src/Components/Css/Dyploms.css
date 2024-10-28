@@ -9,13 +9,13 @@
 
 .reasons-container-reviews img {
   min-width: 200px;
-  max-width: 50%; /* Set to 100% to make the image responsive */
+  max-width: 50vw;
   flex-shrink: 0;
   scroll-snap-align: start;
-  border-radius: 0px;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  object-fit: cover; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Space between images */
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 
 .reasons-container-reviews::-webkit-scrollbar {
@@ -24,7 +24,7 @@
 
 .reasons-container-reviews::-webkit-scrollbar-thumb {
   background-color: #888;
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 .reasons-container-reviews::-webkit-scrollbar-thumb:hover {
@@ -53,9 +53,9 @@
   }
 
   .reasons-container-reviews img {
-    min-width: 250px; /* Maintain a minimum width */
-    max-width: 100%; /* Ensure responsiveness */
-    margin-bottom: 10px; /* Space between images */
+    min-width: 250px;
+    max-width: 90vw;
+    margin-bottom: 10px;
   }
 }
 
@@ -69,15 +69,15 @@
     padding: 2%;
     margin-left: 5px;
     margin-right: 5px;
-    flex-direction: column; /* Stack images vertically */
-    align-items: center; /* Center images */
-    overflow-x: visible; /* Disable horizontal scroll */
+    flex-direction: column;
+    align-items: center;
+    overflow-x: visible;
   }
 
   .reasons-container-reviews img {
-    min-width: 100%; /* Full width of the container */
-    max-width: 100%; /* Prevent overflow */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Space between images */
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
   }
 }
