@@ -2,7 +2,7 @@ import React from "react";
 import { Head_info } from "./Head_Info";
 import { Central_Image } from "./Central_image";
 import { Head_name } from "./Head_name";
-import Head_bg from "../../Images/Head_bg.jpg";
+import Head_bg from "../../Images/Head_bg3.png";
 import { LanguageSelector } from "../LanguageSelector";
 import "../Css/Head.css";
 
