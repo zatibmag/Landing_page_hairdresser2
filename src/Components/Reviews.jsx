@@ -5,7 +5,6 @@ import Review3 from "../Images/Review3.png";
 import Review4 from "../Images/Review4.png";
 import Review5 from "../Images/Review5.png";
 import Review6 from "../Images/Review6.png";
-import { Button } from "./Button";
 import { useLanguage } from "../Context/LanguageContext";
 import "./Css/Reviews.css";
 
@@ -22,19 +21,6 @@ export function Reviews() {
         return "Відгуки";
       default:
         return "Opinie";
-    }
-  };
-
-  const getButtonLabel = () => {
-    switch (selectedLanguage) {
-      case "Polish":
-        return "Więcej";
-      case "English":
-        return "More";
-      case "Ukrainian":
-        return "Більше";
-      default:
-        return "Więcej";
     }
   };
 

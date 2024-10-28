@@ -8,13 +8,13 @@
 }
 
 .reasons-container-reviews img {
-  min-width: 200px;
-  max-width: 100%; /* Set to 100% to make the image responsive */
-  flex-shrink: 0;
+  min-width: 200px; /* Maintain a minimum width */
+  max-width: 90vw; /* Set max-width to a percentage of the viewport width */
+  flex-shrink: 0; /* Prevent shrinking */
   scroll-snap-align: start;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  object-fit: cover; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure full visibility without cropping */
   margin-bottom: 10px; /* Space between images */
 }
 
@@ -54,7 +54,7 @@
 
   .reasons-container-reviews img {
     min-width: 250px; /* Maintain a minimum width */
-    max-width: 100%; /* Ensure responsiveness */
+    max-width: 90vw; /* Adjust for smaller screens */
     margin-bottom: 10px; /* Space between images */
   }
 }
